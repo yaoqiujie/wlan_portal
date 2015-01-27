@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>登录</title>
+		<link href="css/login.css" rel="stylesheet" type="text/css" />
+		<link href="css/login_newadd.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="js/portal.js"></script>
+		<script>
+
+        $(function () {
+            $("#txtUser").focus();//输入焦点
+
+            $("#txtPass").keydown(function (event) {
+                if (event.which == "13") {//回车键，用.ajax提交表单
+                    $("#btnLogin").trigger("click");
+                }
+            });
+
+            $("#btnDynamic").click(function () { //“登录”按钮单击事件
+                //获取用户名称
+                var strTxtName = encodeURI($("#txtUser").val());
+                //开始发送数据
+				createToken(strTxtName);
+            });
+
+            $("#btnLogin").click(function () { //“登录”按钮单击事件
+                //获取用户名称
+                var strTxtName = encodeURI($("#txtUser").val());
+                //获取输入密码
+                var strTxtPass = encodeURI($("#txtPass").val());
+                //开始发送数据
+				auth_with_input(strTxtName, strTxtPass);
+            });
+        })
+    </script>
+</head>
+
+	<body style="margin:0 auto;">
+		<div class="wrap">
+			<a href=http://m.7daysinn.cn target="_blank">
+				<div class="bg" style="background: url(images/background.jpg) repeat-x;background-size:100% 100%"></div>
+			</a>
+			<form id="loginForm">			
+				<div class="login_m">			
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td colspan="2" style=""><img src="images/login_new.png" style="width: 150px;height: 50px;float:left;padding-left:5px;" /><img src="" style="float: left;padding-left:15px;"/></td>
+						 </tr>
+						<tr>
+							<td colspan="2" height="16"></td>
+						</tr>
+						<tr>
+							<td colspan="2" height="16"></td>
+						</tr>
+						<tr>
+							<td class="tw">用户名:</td>
+							<td class="placehd"><input id="txtUser" type="text" class="logininput" style="" placeholder="请输入手机号"/></td>
+						</tr>
+						<tr>
+							<td colspan="2" height="16"></td>
+						</tr>
+						<tr>
+						 <td class="tw">&nbsp;&nbsp;&nbsp;</td>
+						 <td><input id="btnDynamic" type="button" style="" class="loginbuttonl" value="发送动态密码到手机" /></td>
+						  </tr>
+						<tr>
+							<td colspan="2" height="16"></td>
+						</tr>
+						<tr>
+							<td class="tw">密&nbsp;&nbsp;&nbsp;码:</td>
+							<td class="placehd"><input id="txtPass" type="password" class="logininput" placeholder="请输入动态密码"/></td>
+						</tr>
+						<tr>
+							<td colspan="2" height="16"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input id ="btnLogin" type="button" class="loginbutton2" value="登    陆" /></td>
+						</tr>
+					</table>
+				</div>
+			</form>
+		</div>
+
+	</body>
+</html>

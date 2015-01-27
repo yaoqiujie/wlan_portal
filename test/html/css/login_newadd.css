@@ -1,0 +1,157 @@
+@CHARSET "UTF-8";
+.editbox{
+position: relative;
+top: 5px;
+float: right;
+z-index: 9;
+font-size:10px;
+width: 50px;
+height: 0;
+background: #033;
+padding-right: 2px;
+color: black;
+}
+body,h1,h2,p,form,button,input,img,iframe{margin:0;padding:0;border:0;}
+/* body{ padding-left: 20%; font-family: Microsoft Yahei, Arial, Helvetica, sans-serif; } */
+input{ font-family: Microsoft Yahei, Arial, Helvetica, sans-serif; }
+a:link, a:visited, a:active, a:hover { color: #666; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+:focus { outline: 0 }
+ol, ul { list-style: none }
+
+.loginarea{
+	width: 25%;
+	height: 380px;
+	text-align:center;
+	background:rgb(206,242,240) -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #F5F5F5));
+	opacity:0.9;
+	border-radius:10px;
+	position: absolute;
+	top: 23%;
+	left: 4%;
+	color: rgb(102,102,102);
+	font-size: 18px;
+	border-right: 3px solid rgb(202, 193, 193);
+	border-bottom: 3px solid rgb(202, 193, 193);
+}
+.logintable{
+	width: 100%;
+	padding-left: 20px;
+	padding-top: 40px;
+}
+
+.logintable1{
+	width: 100%;
+	padding-top: 10px;
+	
+}
+.tw{
+width:30%;
+text-align:right;
+color:#7C7878;
+font-weight:bold;
+padding-left:2px;
+font-size:14px;
+}
+.logininput{
+margin:0 auto;
+width:85%;
+height:26px;
+border:1px solid #9dd5f2;	
+}
+.loginbuttonl{
+margin:0 auto;
+/* width:76%; */
+height:30px;
+background:url('../images/button5.png') repeat-x;
+border-style:outset;
+border-radius:5px;
+color:#fff;
+font-size:14px;
+font-family: Microsoft Yahei;
+}
+.loginbutton2{
+width:82%;
+height:30px;
+/* background: #21BDEA -webkit-gradient(linear, left top, left bottom, color-stop(0, #21BDEA), color-stop(1, #FFFAFA)); */
+background:url('../images/button5.png') repeat-x;
+border-style:outset;
+border-radius:5px;
+/* font-weight:bold; */
+font-size:14px;
+color:#fff;
+font-family: Microsoft Yahei;
+}
+/*登录成功*/
+.loginok{
+padding-top:10px;
+width:100%;	
+}
+
+.logininfo1{
+	color: #000;
+	font-size: 11px;
+}
+
+.logininfo2{
+	color: #115899;
+	font-size: 11px;
+}
+
+.logininfo3{
+	color: #000;
+	font-size: 11px;
+	line-height:14px;
+	margin:8px 0 13px 0;
+}
+
+.logininfo4{
+	color: #000;
+	font-size: 20px;
+	line-height:18px;
+	margin:21px 0 48px 0;
+}
+
+.time{
+width:176px;
+height:40px;
+border:1px solid #E8E8E8;
+border-radius:5px;
+border-style:outset;
+background: url(../images/timebg.png);
+color:#fff;
+font-size:30px;
+line-height:40px;
+margin:0 auto 3px auto;
+}
+.loginbutton3{
+width:104px;
+height:30px;
+background: url(../images/btnS.png) repeat-x;
+border-radius:5px;
+border:1px solid #fdbf47;
+ border-style:outset; 
+color:#fff;
+font-size:14px;
+font-weight:bold;
+}
+.loginbutton4{
+width:104px;
+height:30px;
+background: url(../images/btnF.png) repeat-x;
+border-radius:5px;
+border:1px solid #A39E94;
+ border-style:outset; 
+color:#fff;
+font-size:14px;
+font-weight:bold;
+}
+
+.loginfail{
+	padding-top:40px;
+	font-size:14px;
+	width:100%;
+}
+
+.placehd{
+	font-size: 14px;
+}

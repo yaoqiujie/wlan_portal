@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<title>登录</title>
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<link href="css/login_newadd.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="js/portal.js"></script>
+		<script>
+
+        $(function () {
+
+            $("#btnLogin").click(function () { //“登录”按钮单击事件
+				var args = getUrl();
+				auth(args);
+            })
+        })
+    </script>
+
+</head>
+
+<body style="margin:0 auto;">
+<div class="wrap">
+			<a href=http://m.7daysinn.cn target="_blank">
+				<div class="bg" style="background: url(images/background.jpg) repeat-x;background-size:100% 100%"></div>
+			</a>
+
+	<form id="loginForm">
+	<div class="login_m">
+	<div><img src="images/login_new.png" width="160" height="50" /></div>
+						    <p class="logininfo4">设备已绑定</p>
+						    <input id="btnLogin" type="button" class="loginbutton4" value="一键登录" />
+					</div>
+	</div>
+	</form>
+</div>
+</body>
+</html>
